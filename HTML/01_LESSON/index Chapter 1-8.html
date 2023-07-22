@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- You can store more metadatas -->
+        <meta charset="UTF-8">
+        <meta name="author" content="Lou B. de los Reyes II">
+        <meta name="description" content="This page contains all the things I am learning how to create as I learn HTML.">
+        <title>My First Web Page</title>
+        <!-- adding a favicon -->
+        <!-- relative reference : location of the object where resides in the same server -->
+        <link rel="icon" href="html5.png" type="image/x-icon">
+        <link rel="stylesheet" href="main.css" type="text/css">
+    </head>
+    <body>
+        <!-- One H1 per page is a must-->
+        <!-- plugins needed -->
+        <!-- 1. Live Server -->
+        <!-- always validate your page in validator.w3.org -->
+        <!-- headers have meaning or semantic in your page -->
+        <!-- <Headers are semantic elements -->
+        <header>
+            <h1>My Goals for the Year 2023</h1>
+            <!--NAV is semantic element for creating navigation -->
+            <nav aria-label="primary-navigation">
+                <ul>
+                    <li>
+                        <a href="#html">Learning HTML</a>
+                    </li>
+                    <li>
+                        <a href="#vacation">Planning a Vacation</a>
+                    </li>
+                    
+                </ul>
+            </nav>
+        </header>
+        <!-- HR :Semantic element -->
+        <main>
+            <!-- section vs article : article should be used over section-->
+        <article id="html">
+            <h2>I'm Ready to Learn HTML</h2>
+            <p>This is my first web page.</p>
+            <section>
+                <!-- title is not accessible in screen reader -->
+                <!-- text is not required -->
+                <h3>Honda ADV 160</h3>
+                <img src="img/Screenshot_20221201_083453.png" alt="Honda ADV 160 image" title="I am learning HTMl5" width="300" height="300" loading="lazy">
+                <figure>
+                    <figcaption>
+                        An Example of HTML5 Code
+                    </figcaption>
+                    <p>
+                        <code>&lt;h1&gt;Hello World!&lt;&gt;</code>
+                    </p>
+                </figure>
+            </section>
+            <section>
+            <h3>My Daily Schedule</h3>
+                <p>Let me tell you how I:</p>
+                    <ol>
+                    <li>...I learn more about web dev.</li>
+                    <li>...I plan out my schedule.</li> 
+                    <li>...I use resources from <abbr title="Mozilla Developer Network">
+                        <!-- absolute reference -->
+                        <a href="https://developer.mozilla.org/">MDN</a></abbr>.</li>
+                    </ol>
+                    <!-- sidebar of the page or complementary area. -->
+                    <aside>
+                        <details>
+                            <summary>
+                                Guess the <mark>number of hours</mark> I code per day
+                            </summary>
+                            <p>I start at <time datetime="08:00">8 am</time> and I write code for <time datetime="PT3H">3 hours</time> every morning.</p>
+                        </details>
+                    </aside>
+                    <br>
+                    <table>
+                        <caption>My Daily Schedule</caption>
+                        <thead>
+                            <tr>
+                                <th>&nbsp;</th>
+                                <th scope="col">Time</th>
+                                <th scope="col">Activity</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Morning</th>
+                                <td>
+                                    <time datetime="08:00">8am</time>-<time datetime="11:00">11am</time>
+                                </td>
+                                <td>Write Code</td>
+                            </tr>
+                            <tr> 
+                                <th scope="row">Break</th>
+                                <td>
+                                    <time datetime="11:00">11am</time>-<time datetime="12:00">12pm</time>
+                                </td>
+                                <td>Eat Lunch!</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Afternoon</th>
+                                <td>
+                                    <time datetime="12:00">12pm</time>-<time datetime="17:00">5pm</time>
+                                </td>
+                                <td>Eat Lunch!</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Evening</th>
+                                <td rowspan="2">All Other Times</td>
+                                <td>Free Time</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Night</th>
+                                <td>Sleep</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="3">And that's what I do every, 5 days a week. Just eat, sleep, code ... and recharge!</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+            </section>
+        </article>
+        <hr>
+        <article id="vacation">
+            <h2>I am also planning a Vacation</h2>
+            <!-- <em>emphazing the word inside this tag. It formats the font to italic.</em> -->
+            <p>I've been working hard and <em>really need a gateway</em>.</p>
+            <p>I live in the <abbr title="Philippines">PH</abbr> so I want visit a beach.</p>
+            
+            <section>
+                <h3>Places I'd like to Visit</h3>
+                <ul>
+                <li>
+                    <p>I've heard good things about the Palawan.</p>
+                    <figure>
+                        <img src="img/Screenshot_20230130_045051.png" alt="Palawan Beach" title="I want to visit a Palawan beach." loading="lazy">
+                        <figcaption>
+                            Palawan Beach Getaway
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <p>I've heard good things about going here:</p>
+                    <address>
+                        915 I Trinidad Street,Brgy. Vergara<br>
+                        Mandaluyong City,1454<br>
+                        Philippines
+                    </address>
+                        <figure>
+                        <img src="img/Screenshot_20230225_103154.png" alt="House for Rent" title="House Tour" loading="lazy" width="400" height="267">
+                        <figcaption>
+                            A Palawan Vacation Image
+                        </figcaption>
+                    </figure>
+                </ul>
+            </section>
+            
+            <section>
+                <h3>Place I Want to Avoid</h3>
+                <dl><!-- This is a description list-->
+                    <dt>Nort Pole</dt>
+                    <dd>I hear this is <strong>cold</strong>!</dd>
+
+                    <dt>South Pole</dt>
+                    <dd>This is also cold.</dd>
+
+                    <dt>Mountain Tops</dt>
+                    <dd>These are also cold.</dd>
+                </dl>    
+            </section>  
+        </article>  
+        </main> 
+        <footer>
+            <!-- HTML Entities starts with & -->
+            <p>
+                &lt; &lt; &lt; &copy; <a href="about.html">Lou B. de los Reyes II</a> &gt;&gt;&gt;
+            </p>
+            <!-- this is less than character -->
+            <p>
+                <a href="#">Back to Top</a>
+            </p>
+        </footer>   
+    </body>
+</html> 
